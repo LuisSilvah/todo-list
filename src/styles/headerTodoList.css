@@ -1,0 +1,23 @@
+.headerPage {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.homepage {
+    margin-left: 3.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.adicionar {
+    margin-right: 3.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.adicionar:hover {
+    color: #572dee;
+}

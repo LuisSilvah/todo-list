@@ -9,7 +9,9 @@
 }
 
 body {
-  background-color: black;
+  background: var( --linear-gradiente-login);
+  
+  min-height: 100vh;
 }
 
 :root{ 
@@ -25,5 +27,5 @@ body {
   --roxo-forte: #24155a;
   --cinza-claro: rgba(255, 255, 255, 0.3);
 
-  --linear-gradiente-login: linear-gradient(45deg, black, #1B2029)
+  --linear-gradiente-login: linear-gradient(45deg, black, #1B2029);
 }

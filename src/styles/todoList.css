@@ -1,3 +1,84 @@
-h1 {
-    color: rgb(17, 34, 50);
+.caixaMaior {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2rem;
+
+}
+
+.caixaMaior01 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caixaMaior02 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caixinha {
+    background-color: #fff;
+    margin: 20px 0;
+    min-width: 250px;
+    min-height: 100px;
+    border-radius: 10px;
+
+    border: 3px solid var(--roxo-claro);
+
+}
+
+.caixinhaCircle {     
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#e8cbc0, #636fa4);
+    clip-path: circle(50% at right 100%);
+    z-index: -2;  
+}  
+
+.headerDaCaixinha {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.andamento {
+    background-color: rgba(255, 255, 0, 0.5);
+    color: rgb(81, 81, 21);
+    font-size: 14px;
+    padding: 2px 8px;
+    border-radius: 30px;
+}
+
+.finalizado {
+    background-color: rgba(0, 255, 76, 0.5);
+    color: #000;
+    font-size: 14px;
+    padding: 2px 8px;
+    border-radius: 30px;
+}
+
+.tresPontinhos {
+    cursor: pointer;
+}
+
+.caixinhaTexto {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+margin-top: 5px;
+}
+
+.titulo {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }

@@ -94,7 +94,7 @@ section.image {
 section.image img {
     width: 750px;
     border-radius: 35px;
-    border: 7px solid var(--roxo-fort);
+    border: 7px solid var(--roxo-forte);
 }
 
 main .alternative {
@@ -124,7 +124,7 @@ main .alternative span::after {
 }
 
 /* Circulo */
-/* section.image .circle {     
+section.image .circle {     
     position: absolute;
     height: 100%;
     width: 100%;
@@ -132,5 +132,5 @@ main .alternative span::after {
     left: 0;
     background: linear-gradient(#e8cbc0, #636fa4);
     clip-path: circle(50% at right 100%);
-    z-index: -1;  Mover para a camada anterior usando o z 
-}   */
+    z-index: -1;  
+}  
