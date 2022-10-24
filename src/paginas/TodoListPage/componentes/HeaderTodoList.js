@@ -1,16 +1,24 @@
-import { Plus } from "phosphor-react";
+import { CaretDoubleLeft, Plus } from "phosphor-react";
 import "../../../styles/headerTodoList.css"
 
-function HeaderTodoList() {
+function HeaderTodoList(
+    {
+        title,
+        AbrirCriarCaixinha,
+        mostrarCaixinha
+    }
+) {
     return (
         <header className="headerPage">
             <div className="homepage">
-                <span className="texto">Homepage Design</span>
+                <span className="texto">{title}</span>
             </div>
 
-            <div className="adicionar">
-                <Plus size={34} weight="fill"/>
+            <div className="adicionar" onClick={() => AbrirCriarCaixinha(mostrarCaixinha)}>
+            {!mostrarCaixinha && <Plus size={34} weight="fill" />}
+            {mostrarCaixinha && <CaretDoubleLeft size={34} />}
             </div>
+
         </header>
     )
 }

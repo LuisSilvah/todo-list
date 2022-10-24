@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300;1,400&display=swap');
+
 .login {
     background: var(--linear-gradiente-login);
     color: aliceblue;
@@ -18,9 +20,10 @@ main h1 {
     color: #423ba3;
     font-size: 3rem;
     margin-bottom: 3rem;
+    text-align: center;
 }
 
-main .social-media a {
+main .social-media a{
     text-decoration: none;
 }
 
@@ -49,20 +52,20 @@ main form label {
     flex-direction: column;
 }
 
-main form label span {
+main form label span{
     font-size: 1.3rem;
     margin-top: 1.5rem;
 
 }
 
 main form input {
-    background: #161923;
+    background: #161923; 
     width: 300px;
     height: 50px;
     padding: 0 0.5rem;
     margin-top: 2rem;
     outline: black;
-    color: var(--cinza-claro);
+    color: rgb(151, 144, 144);
     font-size: 1rem;
     border-radius: 8px;
 }
@@ -75,27 +78,41 @@ main form input[type="submit"] {
     border-radius: 32px;
     font-size: 1.3rem;
     color: aliceblue;
-    background-color: var(--azul-escuro-claro);
+    background-color: rgb(17, 34, 50);
     transition: all 0.3s ease-in-out;
 }
 
 main form input[type="submit"]:hover {
-    background: var(--azul-escuro-azulado);
+    background: rgb(13, 25, 58);
 
 }
 
 section.image {
+    width: 50vw;
     display: flex;
     align-items: center;
     margin-right: 50px;
     margin-top: 0px;
+    padding: 2rem;
+
 }
 
 section.image img {
     width: 750px;
     border-radius: 35px;
-    border: 7px solid var(--roxo-forte);
+    border: 7px solid rgb(36, 21, 90);
 }
+
+ /* section.image .circle {     
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#e8cbc0, #636fa4);
+    clip-path: circle(50% at right 100%);
+    z-index: -1;  Mover para a camada anterior usando o z 
+}   */
 
 main .alternative {
     margin-top: 1.2rem;
@@ -104,33 +121,64 @@ main .alternative {
 main .alternative span {
     font-size: 1.1rem;
     font-weight: 400;
-    color: var(--cinza-claro);
+    color: rgba(255, 255, 255, 0.3);
     position: relative;
-}
+} 
 
-main .alternative span::before,
-main .alternative span::after {
+main .alternative span::before, main .alternative span::after {
     position: absolute;
     content: '';
     height: 1px;
     width: 150px;
     bottom: 50%;
     right: 50px;
-    background: var(--cinza-claro);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 main .alternative span::after {
     left: 50px;
 }
 
-/* Circulo */
-section.image .circle {     
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(#e8cbc0, #636fa4);
-    clip-path: circle(50% at right 100%);
-    z-index: -1;  
-}  
+main p {
+   color: rgba(204, 114, 61, 0.2);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-start;
+   
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    section.image img {
+        width: 110%;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    section.image {
+        display: none;
+        visibility: hidden;
+    }
+
+    main{
+        width: 100vw;
+    }
+
+} 
+
+@media only screen and (max-width: 450px) {
+
+    main h1 {
+        font-size: 2rem
+    }
+
+    main .alternative span {
+        font-size: 0.8rem;
+    }
+
+    main form label span, main form input[type="submit"] {
+        font-size: 1rem;
+    }
+
+}

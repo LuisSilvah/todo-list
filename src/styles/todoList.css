@@ -28,12 +28,12 @@
     min-width: 250px;
     min-height: 100px;
     border-radius: 10px;
-
+    padding: 0 3rem;
     border: 3px solid var(--roxo-claro);
 
 }
 
-.caixinhaCircle {     
+.caixinhaCircle {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -41,8 +41,8 @@
     left: 0;
     background: linear-gradient(#e8cbc0, #636fa4);
     clip-path: circle(50% at right 100%);
-    z-index: -2;  
-}  
+    z-index: -2;
+}
 
 .headerDaCaixinha {
     margin-top: 5px;
@@ -75,10 +75,68 @@
     align-items: center;
     justify-content: center;
     display: flex;
-margin-top: 5px;
+    margin-top: 5px;
+    color: #000;
+    font-size: 22px;
 }
 
 .titulo {
     font-size: 2rem;
     margin-bottom: 20px;
+}
+
+.criarCaixinha {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.criarCaixinha form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.criarCaixinha form label {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.criarCaixinha form label span{
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+
+}
+
+.criarCaixinha form input {
+    background: #161923; 
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 2rem;
+    outline: black;
+    color: rgb(151, 144, 144);
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.criarCaixinha form input[type="submit"] {
+    cursor: pointer;
+    margin-top: 55px;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 32px;
+    font-size: 1.3rem;
+    color: aliceblue;
+    background-color: rgb(17, 34, 50);
+    transition: all 0.3s ease-in-out;
+}
+
+.criarCaixinha form input[type="submit"]:hover {
+    background: rgb(13, 25, 58);
+
 }

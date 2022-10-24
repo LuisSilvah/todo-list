@@ -5,6 +5,14 @@ import "../styles/header.css"
 
 
 function Header() {
+
+    function Logout () {
+        localStorage.removeItem("usuario")
+        localStorage.removeItem("autenticado")
+
+        window.location.reload()
+    }
+
     return (
         <header className="header">
             <div className="header-left">
@@ -24,7 +32,7 @@ function Header() {
 
                 <Link to="/settings" className="menu-item">Settings</Link>
 
-                <Link to="/help" className="menu-item">Help</Link>
+                <div className="menu-item logout" onClick={Logout}>Logout</div>
             </div>
 
             <div className="sino">
